@@ -4,6 +4,7 @@ using Xamarin.Forms.Xaml;
 using GOPMemery.Services;
 using GOPMemery.Models;
 using System.Diagnostics;
+using GOPMemery.Views;
 
 namespace GOPMemery
 {
@@ -17,7 +18,7 @@ namespace GOPMemery
             Repository = new Repo(dbPath);
 
             Debug.WriteLine($"Database located at: {dbPath}");
-            MainPage = new AppShell();
+            MainPage = new LoginPage();
         }
 
         protected override void OnStart()

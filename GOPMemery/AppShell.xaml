@@ -30,13 +30,26 @@
 
     <!-- Your Pages -->
     <TabBar>
-        <Tab Title="Tab">
+        <Tab Title="Home">
             <ShellContent ContentTemplate="{DataTemplate local:LoginPage}" />
         </Tab>
-        <Tab Title="Tab">
+        <Tab Title="Featured">
+            <ShellContent ContentTemplate="{DataTemplate local:RegisterPage}" />
+        </Tab>
+        <Tab Title="Latest">
+            <ShellContent ContentTemplate="{DataTemplate local:RegisterPage}" />
+        </Tab>
+        <Tab Title="Subscribed">
+            <ShellContent ContentTemplate="{DataTemplate local:RegisterPage}" />
+        </Tab>
+        <Tab Title="Profile">
             <ShellContent ContentTemplate="{DataTemplate local:RegisterPage}" />
         </Tab>
     </TabBar>
+
+    <ShellItem Route="login">
+        <ShellContent ContentTemplate="{DataTemplate local:LoginPage}" />
+    </ShellItem>
 
     <!-- Optional Templates 
     // These may be provided inline as below or as separate classes.

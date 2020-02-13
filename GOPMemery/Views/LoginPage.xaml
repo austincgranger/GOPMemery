@@ -5,7 +5,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:local="clr-namespace:GOPMemery.Effects"
              mc:Ignorable="d"
-             x:Class="GOPMemery.Views.LoginPage">
+             x:Class="GOPMemery.Views.LoginPage"            
+             >
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Spacing="10" BackgroundColor="{StaticResource Background}">
