@@ -18,7 +18,7 @@ namespace GOPMemery
             Repository = new Repo(dbPath);
 
             Debug.WriteLine($"Database located at: {dbPath}");
-            MainPage = new LoginPage();
+            MainPage = new AppShell();
         }
 
         protected override void OnStart()

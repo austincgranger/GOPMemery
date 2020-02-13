@@ -30,19 +30,10 @@
 
     <!-- Your Pages -->
     <TabBar>
-        <Tab Title="Home">
+        <Tab Title="Home" Route="home">
             <ShellContent ContentTemplate="{DataTemplate local:LoginPage}" />
         </Tab>
-        <Tab Title="Featured">
-            <ShellContent ContentTemplate="{DataTemplate local:RegisterPage}" />
-        </Tab>
-        <Tab Title="Latest">
-            <ShellContent ContentTemplate="{DataTemplate local:RegisterPage}" />
-        </Tab>
-        <Tab Title="Subscribed">
-            <ShellContent ContentTemplate="{DataTemplate local:RegisterPage}" />
-        </Tab>
-        <Tab Title="Profile">
+        <Tab Title="Featured" Route="featured">
             <ShellContent ContentTemplate="{DataTemplate local:RegisterPage}" />
         </Tab>
     </TabBar>

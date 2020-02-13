@@ -17,7 +17,7 @@ namespace GOPMemery.Views
         public LoginPage()
         {
             InitializeComponent();
-
+            
             BindingContext = viewModel = new LoginViewModel();
         }
     }
