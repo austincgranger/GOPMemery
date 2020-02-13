@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:GOPMemery.Effects"
+             mc:Ignorable="d"
+             x:Class="GOPMemery.Views.LoginPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="10" BackgroundColor="{StaticResource Background}">
+
+                <Label HeightRequest="110"  
+                          HorizontalOptions="FillAndExpand" 
+                          Text="GOP Memery" 
+                          BackgroundColor="{StaticResource Primary}"
+                          TextColor="{StaticResource White}" 
+                          FontSize="40" 
+                          HorizontalTextAlignment="Center"
+                          VerticalTextAlignment="Center"/>
+
+                <Entry  Margin="20,40,20,0" 
+                         HeightRequest="50" 
+                         Placeholder="Email">
+                    <Entry.Effects>
+                        <local:BackgroundEntryEffect />
+                    </Entry.Effects>
+                </Entry>
+
+                <Entry Margin="20,0,20,0" 
+                        HeightRequest="50" IsPassword="true"
+                        Placeholder="Password">
+                    <Entry.Effects>
+                        <local:BackgroundEntryEffect />
+                    </Entry.Effects>
+                </Entry>
+
+                <Button Margin="20,0,20,0" 
+                         HeightRequest="50" 
+                         TextColor="{StaticResource White}" 
+                         Text="Login"  
+                         BackgroundColor="{StaticResource Primary}"
+                         HorizontalOptions="FillAndExpand"/>
+
+                <Button Margin="20,0,20,0" 
+                         HeightRequest="50" 
+                         TextColor="{StaticResource White}" 
+                         Text="Register" 
+                         BackgroundColor="{StaticResource Secondary}"
+                         HorizontalOptions="FillAndExpand"
+                        Command="{Binding GoToRegisterCommand}"
+                        />
+
+                <Label Text="Forgot password" 
+                        HorizontalOptions="Center" 
+                        TextColor="{StaticResource Primary}"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
